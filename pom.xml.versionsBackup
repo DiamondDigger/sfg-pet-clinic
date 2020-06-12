@@ -49,7 +49,7 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:</developerConnection>
+        <developerConnection>scm:git:https\://github.com/naglec13/sfg-pet-clinic.git</developerConnection>
     </scm>
 
 </project>
