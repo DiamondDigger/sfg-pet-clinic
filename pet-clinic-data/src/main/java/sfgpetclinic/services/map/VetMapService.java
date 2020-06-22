@@ -1,23 +1,23 @@
 package sfgpetclinic.services.map;
 
-import sfgpetclinic.model.Pet;
-import sfgpetclinic.services.CrudService;
+import sfgpetclinic.model.Vet;
+import sfgpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class PetrServiceAbstract extends AbstractMapService<Long, Pet> implements CrudService <Pet, Long> {
+public class VetMapService extends AbstractMapService<Long, Vet> implements VetService<Vet, Long> {
     @Override
-    public Set<Pet> findAll() {
+    public Set<Vet> findAll() {
         return super.findAll();
     }
 
     @Override
-    public Pet findById(Long id) {
+    public Vet findById(Long id) {
         return super.findById(id);
     }
 
     @Override
-    public Pet save(Pet object) {
+    public Vet save(Vet object) {
         return super.save(object.getId(), object);
     }
 
@@ -27,7 +27,7 @@ public class PetrServiceAbstract extends AbstractMapService<Long, Pet> implement
     }
 
     @Override
-    public void delete(Pet object) {
+    public void delete(Vet object) {
         super.delete(object);
     }
 }
