@@ -6,8 +6,6 @@ import sfgpetclinic.model.Owner;
 import sfgpetclinic.model.Vet;
 import sfgpetclinic.services.OwnerService;
 import sfgpetclinic.services.VetService;
-import sfgpetclinic.services.map.OwnerMapService;
-import sfgpetclinic.services.map.VetMapService;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -15,9 +13,10 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerMapService();
-        vetService = new VetMapService();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+
+        this.vetService = vetService;
     }
 
     @Override
