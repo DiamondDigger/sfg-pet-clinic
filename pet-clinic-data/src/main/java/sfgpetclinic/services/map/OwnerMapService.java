@@ -7,7 +7,7 @@ import sfgpetclinic.services.OwnerService;
 import java.util.Set;
 
 @Service
-public class OwnerMapService extends AbstractMapService<Long, Owner> implements OwnerService<Owner, Long> {
+public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService<Owner, Long> {
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
@@ -20,7 +20,7 @@ public class OwnerMapService extends AbstractMapService<Long, Owner> implements 
 
     @Override
     public Owner save(Owner object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override

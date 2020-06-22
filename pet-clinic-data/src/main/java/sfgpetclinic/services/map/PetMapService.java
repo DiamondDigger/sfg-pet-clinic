@@ -7,7 +7,7 @@ import sfgpetclinic.services.PetService;
 import java.util.Set;
 
 @Service
-public class PetMapService extends AbstractMapService<Long, Pet> implements PetService<Pet, Long> {
+public class PetMapService extends AbstractMapService<Pet, Long> implements PetService<Pet, Long> {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();
@@ -20,7 +20,7 @@ public class PetMapService extends AbstractMapService<Long, Pet> implements PetS
 
     @Override
     public Pet save(Pet object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override
