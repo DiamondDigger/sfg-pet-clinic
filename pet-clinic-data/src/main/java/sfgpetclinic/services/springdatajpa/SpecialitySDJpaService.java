@@ -1,5 +1,7 @@
 package sfgpetclinic.services.springdatajpa;
 
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 import sfgpetclinic.model.Speciality;
 import sfgpetclinic.repositories.SpecialtyRepository;
 import sfgpetclinic.services.SpecialityService;
@@ -7,6 +9,8 @@ import sfgpetclinic.services.SpecialityService;
 import java.util.HashSet;
 import java.util.Set;
 
+@Service
+@Profile("springdatajpa")
 public class SpecialitySDJpaService implements SpecialityService {
 
     private SpecialtyRepository specialtyRepository;

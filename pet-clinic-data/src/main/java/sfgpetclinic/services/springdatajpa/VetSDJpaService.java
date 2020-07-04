@@ -19,7 +19,6 @@ public class VetSDJpaService implements VetService<Vet, Long> {
         this.vetRepository = vetRepository;
     }
 
-
     @Override
     public Set<Vet> findAll() {
         Set<Vet> vets = new HashSet<>();
