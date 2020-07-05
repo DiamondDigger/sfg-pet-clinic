@@ -23,7 +23,7 @@ public class VisitMapService extends AbstractMapService<Visit, Long> implements 
     public Visit save(Visit visit) {
 
         // validation before saving
-        if (visit.getPet() == null || visit.getPet().getOwner() == null || visit.getPet().getId() == null
+        if (visit.getPet()== null || visit.getPet().getOwner()==null || visit.getPet().getId() == null
                 || visit.getPet().getOwner().getId() == null) {
             throw new RuntimeException("Invalid Visit");
         }
