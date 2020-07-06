@@ -33,6 +33,12 @@ public class SpecialitySDJpaService implements SpecialityService {
 
     @Override
     public Speciality save(Speciality object) {
+        System.out.println("SPECIALTY-SPECIALTY-SPECIALTY-SPECIALTY-SPECIALTY");
+        System.out.println("SPECIALTY-SPECIALTY-SPECIALTY-SPECIALTY-SPECIALTY");
+        System.out.println("SPECIALTY-SPECIALTY-SPECIALTY-SPECIALTY-SPECIALTY");
+        System.out.println("SPECIALTY-SPECIALTY-SPECIALTY-SPECIALTY-SPECIALTY");
+        System.out.println("--------------------------");
+
         return specialtyRepository.save(object);
     }
 

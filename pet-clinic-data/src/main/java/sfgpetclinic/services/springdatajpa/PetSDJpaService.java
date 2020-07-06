@@ -32,8 +32,16 @@ public class PetSDJpaService implements PetService {
     }
 
     @Override
-    public Pet save(Pet object) {
-        return petRepository.save(object);
+    public Pet save(Pet pet) {
+        System.out.println("PET-PET");
+        System.out.println("PET-PET");
+        System.out.println("PET-PET");
+        System.out.println("PET-PET");
+        System.out.println("PET-PET");
+        System.out.println("--------------------------");
+
+        pet.getOwner().getPets().add(pet);
+        return petRepository.save(pet);
     }
 
     @Override

@@ -33,6 +33,11 @@ public class VetSDJpaService implements VetService<Vet, Long> {
 
     @Override
     public Vet save(Vet object) {
+        System.out.println("VET-VET-VET-VET-VET-VET-");
+        System.out.println("VET-VET-VET-VET-VET-VET-");
+        System.out.println("VET-VET-VET-VET-VET-VET-");
+        System.out.println("--------------------------");
+
         return vetRepository.save(object);
     }
 
