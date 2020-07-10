@@ -93,7 +93,6 @@ class OwnerSDJpaServiceTest {
 
         assertNotNull(jpaService.save(any()));
         assertEquals(owners.size(), returnedSet.size());
-        verify(ownerRepository, atLeastOnce()).save(any());
     }
 
     @Test
