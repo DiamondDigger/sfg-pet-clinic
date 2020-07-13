@@ -7,3 +7,8 @@
   
   
   Development of the Spring Pet Clinic using GitHub Issues, planning work into issues creates a work backlog, which is an important Agile concept.
+
+
+
+
+<img src="/resources/image/PetClinicLabel.png">
